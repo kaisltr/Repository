@@ -1,0 +1,21 @@
+<h1>Chercher evenement</h1>
+
+<form action="{{ path('_chercher_event') }}" method="post">
+    Date : <input type="date" name="Rech" id="Rech"><input type="submit" value="Recherche"><br>
+</form>
+
+<table border="2">
+    <th><b>Club</b></th>
+    <th><b>Evenement</b></th>
+    <th><b>Date</b></th>
+
+    {% for ev in event %}
+        <tr>
+            <td>{{ ev.club.nom }}</td>
+            <td>{{ ev.titre }}</td>
+            <td>{{ ev.date|date('d-m-Y') }}</td>
+            {#<td><a href="{{ path('_participer_event',{"id":ev.id}) }}">Participer</a></td>
+            <td><a href="{{ path('_annuler_part_event',{"id":ev.id}) }}">Annuler</a></td>#}
+        </tr>
+    {% endfor %}
+</table>

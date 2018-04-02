@@ -1,0 +1,7 @@
+esprit_clubs:
+    resource: "@EspritClubsBundle/Resources/config/routing.yml"
+    prefix:   /clubs
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

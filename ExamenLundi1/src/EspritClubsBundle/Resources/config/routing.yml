@@ -1,0 +1,23 @@
+esprit_clubs_homepage:
+    path:     /
+    defaults: { _controller: EspritClubsBundle:Default:index }
+
+_ajout_event:
+    path:     /AjoutEvent
+    defaults: { _controller: EspritClubsBundle:Evenement:AjoutEvent }
+
+_liste_event:
+    path:     /ListeEvent
+    defaults: { _controller: EspritClubsBundle:Evenement:ListeEvent }
+
+_chercher_event:
+    path:     /ChercherEvent
+    defaults: { _controller: EspritClubsBundle:Evenement:ChercherEvent }
+
+_participer_event:
+    path:     /ParticiperEvent
+    defaults: { _controller: EspritClubsBundle:Evenement:ParticiperEvent }
+
+_annuler_part_event:
+    path:     /AnnulerPartEvent
+    defaults: { _controller: EspritClubsBundle:Evenement:AnnulerPartEvent }
